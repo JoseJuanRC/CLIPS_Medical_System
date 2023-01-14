@@ -17,20 +17,20 @@ The code defines several rules, which are sets of conditions and actions that ca
 
 - `move_appointment`: This rule is activated when a fact `move_appointment` is asserted with the patient's name, surname, date and time of the appointment and the new date and time.
 
-- `new_appointment`: This rule is activated when a fact new_appointment is asserted with the patient's name, surname, date, time, and doctor's name and surname. 
+- `new_appointment`: This rule is activated when a fact `new_appointment` is asserted with the patient's name, surname, date, time, and doctor's name and surname. 
 
-- `new_prescription`: This rule is activated when a fact new_prescription is asserted with the patient's name, surname and the prescription. 
+- `new_prescription`: This rule is activated when a fact `new_prescription` is asserted with the patient's name, surname and the prescription. 
 
-- `remove_prescription`: This rule is activated when a fact remove_prescription is asserted with the patient's name, surname and the prescription. 
+- `remove_prescription`: This rule is activated when a fact `remove_prescription` is asserted with the patient's name, surname and the prescription. 
 
 - `combine_prescription`: This rule is activated when there are two prescription facts for the same patient. It then matches both prescriptions and asserts a new prescription that contains the information of the two prescriptions. The two previous prescriptions are then retracted.
 
-- `add_urgent_patient`: This rule is activated when an urgent_patient fact is asserted. It has a salience of 100 which means that it will be executed before the other rules.
+- `add_urgent_patient`: This rule is activated when an `urgent_patient` fact is asserted. It has a salience of 100 which means that it will be executed before the other rules.
 
-- `doctor_left_room`: This rule is activated when a doctor_left_room fact is asserted with a doctor's ID. 
+- `doctor_left_room`: This rule is activated when a `doctor_left_room` fact is asserted with a doctor's ID. 
 
-- `doctor_enter_room`: This rule is activated when a doctor_enter_room fact is asserted with a doctor's ID. 
+- `doctor_enter_room`: This rule is activated when a `doctor_enter_room` fact is asserted with a doctor's ID. 
 
-- `patient_enter_room`: This rule is activated when a patient_enter_room fact is asserted with a patient's ID and room ID. 
+- `patient_enter_room`: This rule is activated when a `patient_enter_room` fact is asserted with a patient's ID and room ID. 
 
-- `patient_left_room`: This rule is activated when a patient_left_room fact is asserted with a patient's ID. 
+- `patient_left_room`: This rule is activated when a `patient_left_room` fact is asserted with a patient's ID. 
